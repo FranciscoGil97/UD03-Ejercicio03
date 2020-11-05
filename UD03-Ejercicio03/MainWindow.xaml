@@ -10,42 +10,57 @@
     Height="600"
     Width="600"
     Icon="/mosaico.ico">
+    <Window.Resources>
+        <Style
+            TargetType="TextBlock" x:Key="altoTextBlock">
+            <Setter
+                Property="Height"
+                Value="100" />
+        </Style>
+        <Style
+            TargetType="TextBlock"
+            x:Key="anchoTextBlock">
+            <Setter
+                Property="Width"
+                Value="100" />
+        </Style>
+    </Window.Resources>
     <DockPanel
         LastChildFill="True">
 
         <TextBlock
             DockPanel.Dock="Top"
             Background="Blue"
-            Height="100" />
+            Style="{StaticResource altoTextBlock}"/>
         <TextBlock
             DockPanel.Dock="Left"
             Background="blue"
-            Width="100" />
+            Style="{StaticResource anchoTextBlock}"/>
         <TextBlock
             DockPanel.Dock="Bottom"
             Background="Green"
-            Height="100" />
+            Style="{StaticResource altoTextBlock}"/>
         <TextBlock
             DockPanel.Dock="Right"
             Background="Green"
-            Width="100" />
+            Style="{StaticResource anchoTextBlock}"/>
         <TextBlock
             DockPanel.Dock="Left"
             Background="OrangeRed"
-            Width="100" />
+            Style="{StaticResource anchoTextBlock}"/>
         <TextBlock
             DockPanel.Dock="Bottom"
             Background="OrangeRed"
-            Height="100" />
+            Style="{StaticResource altoTextBlock}" />
 
         <TextBlock
             DockPanel.Dock="Right"
             Background="Yellow"
-            Width="100" />
+            Style="{StaticResource anchoTextBlock}"/>
         <TextBlock
             DockPanel.Dock="Top"
             Background="Yellow"
-            Height="100" />
+            Style="{StaticResource altoTextBlock}"/>
 
         <TextBlock
             Background="Black" />
